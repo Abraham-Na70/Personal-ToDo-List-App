@@ -3,7 +3,7 @@ import { Todo } from "./Todo";
 import { TodoList } from "./TodoList";
 import { v4 as uuidv4 } from "uuid";
 import { EditTL } from "./EditTL";
-import { CurrentTime } from "./CurrentTime";
+
 
 export const TodoCompiler = () => {
   const [todos, setTodos] = useState([]);
@@ -16,7 +16,7 @@ export const TodoCompiler = () => {
         task: todo, 
         completed: false, 
         isEditing: false,
-        timestamp: CurrentTime() 
+       
       },
     ]);
   };
@@ -51,7 +51,7 @@ export const TodoCompiler = () => {
     <div className="TodoCompiler">
       <h1>Heads Up!</h1>
       <TodoList addTodo={addTodo} />
-      {/* display todos */}
+      {/* show ToDos */}
       {todos.map((todo) =>
         todo.isEditing ? (
           <EditTL editTodo={editTask} task={todo} />

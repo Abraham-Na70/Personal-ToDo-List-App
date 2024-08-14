@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { TodoList } from './TodoList';
 import { Todo } from './Todo';
 import { EditTL } from './EditTL';
-import {CurrentTime} from './CurrentTime'; // Import the CurrentTime component
+
 
 export const LocalTC = () => {
     const [todos, setTodos] = useState([]);
@@ -44,7 +44,6 @@ export const LocalTC = () => {
     return (
         <div className='TodoCompiler'>
             <h1>Get Things Done!</h1>
-            <CurrentTime /> {/* Display the current time */}
             <TodoList addTodo={addTodo} />
             {todos.map((todo, index) => (
                 todo.isEditing ? (
