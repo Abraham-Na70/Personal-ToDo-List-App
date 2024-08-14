@@ -17,24 +17,6 @@ body {
   align-items: center;
 }
 
-/* CurrentTime.css */
-
-.current-time-container {
-  text-align: center;
-  margin: 1rem;
-  padding: 1rem;
-  background-color: #03c7ad;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.current-time {
-  font-family: 'Arial', sans-serif;
-  font-size: 2rem;
-  color: #333;
-  margin: 0;
-}
-
 
 .App {
   text-align: center;
