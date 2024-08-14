@@ -58,8 +58,7 @@ export const TodoCompiler = () => {
         ) : (
           <Todo
             key={todo.id}
-            task={todo.task}
-            timestamp={todo.timestamp}  
+            task={todo}
             deleteTodo={deleteTodo}
             editTodo={editTodo}
             toggleComplete={toggleComplete}
